@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">BullSage</string>
+    <string name="history">History</string>
+    <string name="geography">Geography</string>
+    <string name="general_knowledge">General Knowledge</string>
+    <string name="sports">Sports</string>
+    <string name="video_games">Video Games</string>
+    <string name="select">Select Difficulty</string>
+    <string name="question">Question</string>
+    <string name="answer">Answer</string>
+    <string name="next">Next</string>
+    <string name="current_question">Current Question</string>
+    <string name="current_q">Current Q</string>
+    <string name="resultprompt">ResultPrompt</string>
+    <string name="score">Score</string>
+    <string name="play_again">Play Again</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="add_image">Add Image</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="login_to_continue">Login to Continue</string>
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="select_difficulty">Select Difficulty</string>
+    <string name="select_category">Select Category</string>
+    <string name="leaderboard">Leaderboard</string>
+    <string name="_4">4</string>
+    <string name="logout">Logout</string>
+    <string name="log_out">Log Out</string>
+</resources>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.LeaderBoardActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="@dimen/_140sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:hint="@string/select"
+        app:boxStrokeColor="@color/orange"
+        app:hintTextColor="@color/orange"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <AutoCompleteTextView
+            android:id="@+id/selectDifficulty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputSelectCategory"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="@dimen/_141sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:hint="@string/select_category"
+        app:boxStrokeColor="@color/orange"
+        app:hintTextColor="@color/orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <AutoCompleteTextView
+            android:id="@+id/selectCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/leaderBoardBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_65sdp"
+        android:text="@string/leaderboard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/imageFirst"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/background_icon"
+        android:scaleType="centerCrop"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewGoldMedal"
+        app:layout_constraintStart_toStartOf="@+id/imageViewGoldMedal"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewGoldMedal"
+        app:riv_oval="true"/>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/imageSecond"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/background_icon"
+        android:scaleType="centerCrop"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewSilverMedal"
+        app:layout_constraintStart_toStartOf="@+id/imageViewSilverMedal"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewSilverMedal"
+        app:riv_oval="true" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/imageThird"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:visibility="invisible"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/background_icon"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewBronzeMedal"
+        app:layout_constraintStart_toStartOf="@+id/imageViewBronzeMedal"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewBronzeMedal"
+        app:riv_oval="true" />
+
+    <ImageView
+        android:id="@+id/imageViewGoldMedal"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/leaderBoardBtn"
+        app:layout_constraintStart_toStartOf="@+id/leaderBoardBtn"
+        app:layout_constraintTop_toBottomOf="@+id/leaderBoardBtn"
+        app:srcCompat="@drawable/gold_medal" />
+
+    <ImageView
+        android:id="@+id/imageViewBronzeMedal"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginStart="@dimen/_60sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/imageViewGoldMedal"
+        app:layout_constraintTop_toTopOf="@+id/imageViewGoldMedal"
+        app:srcCompat="@drawable/bronze_medal" />
+
+    <ImageView
+        android:id="@+id/imageViewSilverMedal"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_60sdp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewGoldMedal"
+        app:layout_constraintTop_toTopOf="@+id/imageViewGoldMedal"
+        app:srcCompat="@drawable/silver_medal" />
+
+    <TextView
+        android:id="@+id/thirdName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/name"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="@dimen/_13sdp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/imageThird"
+        app:layout_constraintStart_toStartOf="@+id/imageThird"
+        app:layout_constraintTop_toBottomOf="@+id/imageThird" />
+
+    <TextView
+        android:id="@+id/firstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/name"
+        android:textAlignment="center"
+        android:textSize="@dimen/_13sdp"
+        android:visibility="invisible"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageFirst"
+        app:layout_constraintStart_toStartOf="@+id/imageFirst"
+        app:layout_constraintTop_toBottomOf="@+id/imageFirst" />
+
+    <TextView
+        android:id="@+id/secondName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/name"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="@dimen/_13sdp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/imageSecond"
+        app:layout_constraintStart_toStartOf="@+id/imageSecond"
+        app:layout_constraintTop_toBottomOf="@+id/imageSecond" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@+id/thirdName"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/leaderBoardRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:overScrollMode="never"
+            android:padding="@dimen/_20sdp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
