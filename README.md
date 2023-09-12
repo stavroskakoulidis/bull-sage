@@ -20,6 +20,7 @@ it offers an enjoyable quiz-taking experience across various categories.
 1. Clone this repository to your local machine.
 2. BullSage is built using Firebase Firestore. You will have to create your own Firestore database in order to get your configuration file (google-services.json) containing keys and identifiers for your app.
 3. If the connection to Firestore is done correctly, you are now able to build and run the application to your physical or virtual devices.
+4. If you just want to use the app, you can do it by simple downloading the BullSage.apk file from above. 
 
 ## Usage
 
